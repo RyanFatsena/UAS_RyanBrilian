@@ -154,9 +154,9 @@ public class karyawan extends penambahanKaryawan implements hitungGajiKaryawan{
         potonganKaryawan.add(hitungPotongan());
         gajiBersihKaryawan.add(hitungGajiBersih());
         }
-                
-                
-    public void Cari() throws IOException {
+    
+    //this is to search
+    public void Search() throws IOException {
         String simpan;
         Scanner dyv = new Scanner(System.in);  
         System.out.println("\t\t\t\tPENCARIAN DATA KARYAWAN"
@@ -188,7 +188,7 @@ public class karyawan extends penambahanKaryawan implements hitungGajiKaryawan{
         }       
     }
     
-          
+    //this is to view 
     public void View() throws IOException {
         System.out.println("\t\t\t\t      DATA KARYAWAN"
                 + "\n----------------------------------------------------------------------------------------");  
@@ -200,10 +200,10 @@ public class karyawan extends penambahanKaryawan implements hitungGajiKaryawan{
             +golKaryawan.get(i)+"\t"+usiaKaryawan.get(i)+"\t"+statusKaryawan.get(i)
             +"\t    "+anakKaryawan.get(i));
         }
-        System.out.println("----------------------------------------------------------------------------------------");
-//      	
-    		
+        System.out.println("----------------------------------------------------------------------------------------");		
     }
+    
+    //this is to delete
     public void Delete() throws IOException {
     	Scanner dyv = new Scanner(System.in);
     	String hapus;
