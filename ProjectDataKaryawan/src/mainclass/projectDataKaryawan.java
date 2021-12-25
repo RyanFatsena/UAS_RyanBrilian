@@ -40,7 +40,7 @@ public class projectDataKaryawan {
                     masukKerja.Delete();
                 } else if( opsi.equals("3") ) {
                     System.out.println("\n========================================================================================");
-                    masukKerja.Cari();
+                    masukKerja.Search();
                 } else if( opsi.equals("4") ) {
                     System.out.println("\n========================================================================================");
                     masukKerja.View();
